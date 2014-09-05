@@ -42,6 +42,20 @@ h3{
     background: #eeeeee;}
 .toggle-btn{
     display: none;}
+
+.rwd-pic{
+    margin-bottom: 10px;
+    background: #eee;
+}
+.rwd-pic1 img{
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
+
+
 @media screen and ( min-width:1200px ) {
     .container{
         width: 1170px;
