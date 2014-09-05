@@ -1,0 +1,113 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    padding: 20px;}
+.container{
+    width: 960px;
+    margin: 0 auto;}
+.head,.nav,.mainbody,.sidebar,.foot{
+    margin-bottom: 20px;
+    height: 100px;
+    background: #eee;
+    text-align: center;
+}
+.mainbody,.sidebar{
+    height: 300px;
+    float: left;}
+.mainbody {
+    width: 620px;
+    margin-right: 20px;
+}
+.sidebar{
+    width: 320px;
+}
+.foot{
+    clear: both;
+}
+.nav-list li,.nav-list li a{
+    padding: 7px 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: #3b3b3b;
+}
+.nav{
+    background: #ffbb00;}
+.nav-list li:hover{
+    background: #eeeeee;
+}
+.active {
+    background: #eeeeee;}
+.toggle-btn{
+    display: none;}
+@media screen and ( min-width:1200px ) {
+    .container{
+        width: 1170px;
+    }
+    .mainbody{
+        margin-right: 30px;
+        width: 770px;}
+    .sidebar{
+        width: 370px;}
+}
+
+@media screen and (max-width: 959px) {
+    .container{
+        width: 100%;}
+    .mainbody{
+        margin-right: 3%;
+        width: 67%;}
+    .sidebar{
+        float: right;
+        width: 30%;}
+}
+
+
+@media screen and (max-width: 767px) {
+    .mainbody,.sidebar{
+        float: none;
+        width: 100%;
+    }
+    .toggle-btn{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: inline-block;
+        padding: 7px 10px;
+        font-size: 25px;
+        color: #ffffff;
+        background: #000000;
+        text-decoration: none;
+    }
+    .nav .close{
+        display: none;}
+    .nav:target .close{
+        display: inline-block;
+    }
+    .nav{
+        display: none;}
+    .nav:target{
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        padding-top: 70px;
+        background: #ffffff;
+    }
+    .nav:target .nav-list{
+        background: #000000;}
+    .nav:target li,.nav:target li a{
+        display: block;
+        color: #eeeeee;
+        text-align: left;
+    }
+    .nav:target li:hover{
+        background: #5b5b5b;
+    }
+    .nav:target .active{
+        background: #5b5b5b;
+    }
+}
+
