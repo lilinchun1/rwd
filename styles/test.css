@@ -63,7 +63,9 @@ h3{
     background-size: cover;
 }
 
-
+.rwd-pic3{
+    padding-top: 56.22%;
+}
 
 
 @media screen and ( min-width:1200px ) {
