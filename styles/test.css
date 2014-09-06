@@ -45,13 +45,23 @@ h3{
 
 .rwd-pic{
     margin-bottom: 10px;
-    background: #eee;
+    background-color: #eee;
 }
 .rwd-pic1 img{
     width: 100%;
     max-width: 100%;
 }
+.rwd-pic2 {
+    /*height: 500px;*/
+    padding-top: 56.22%; /*图片高度除以图片宽度 的百分比*/
+    /*background: url(../images/01.jpg) 50% 50% no-repeat;*/
+    background-image: url(../images/01.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 
 
 
@@ -125,3 +135,14 @@ h3{
     }
 }
 
+@media screen and (max-width: 480px) {
+    .rwd-pic2{
+        background-image: url(../images/01_s.jpg);
+    }
+}
+
+@media screen and (max-width: 480px) and ( min-resolution:2ddpx),(max-width: 480px) and (-webkit-min-device-pixel-ratio:2 ){
+    .rwd-pic2{
+        background-image: url(../images/01_s_2x.jpg);
+    }
+}
